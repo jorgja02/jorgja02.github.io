@@ -1,5 +1,4 @@
-.body{background-color:black;}
-.todo{font-family:Broadway; text-decoration:underline; text-align:center; font-size:48pt; color:white;}
+.todo{font-family:Broadway; text-decoration:underline; text-align:center; font-size:48pt; color:black;}
 .critPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:rgb(255, 51, 204);}
 .highPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:red;}
 .medPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:orange;}
