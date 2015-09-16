@@ -1,0 +1,10 @@
+.todo{font-family:Broadway; text-decoration:underline; text-align:center; font-size:48pt; color:black;}
+.critPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:rgb(255, 51, 204);}
+.highPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:red;}
+.medPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:orange;}
+.lowPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:yellow;}
+.critP{font-family:Arial; background-color:rgb(255, 51, 204);}
+.highP{font-family:Arial; background-color:red;}
+.medP{font-family:Arial; background-color:orange;}
+.lowP{font-family:Arial; background-color:yellow;}
+.done{text-decoration:line-through;}
