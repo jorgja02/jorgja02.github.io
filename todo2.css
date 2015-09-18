@@ -1,10 +1,14 @@
-.todo{font-family:Broadway; text-decoration:underline; text-align:center; font-size:48pt; color:black;}
-.critPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:rgb(255, 51, 204);}
-.highPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:red;}
-.medPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:orange;}
-.lowPtitle{font-family:Arial Unicode MS; font-size:24pt; text-align:center; text-decoration:underline; background-color:yellow;}
-.critP{font-family:Arial; background-color:rgb(255, 51, 204);}
-.highP{font-family:Arial; background-color:red;}
-.medP{font-family:Arial; background-color:orange;}
-.lowP{font-family:Arial; background-color:yellow;}
-.done{text-decoration:line-through;}
+.body{background-color:silver}
+.nav{font-family:Broadway; text-decoration:underline; text-align:center; font-size:48pt; color:black;}
+.high{font-family:Arial Unicode MS; font-size:24pt; text-decoration:underline; background-color:red;}
+article.high>ul{color:white;}
+article.high>h1{color:white;}
+.medium{font-family:Arial Unicode MS; font-size:24pt; text-decoration:underline; background-color:orange;}
+article.medium>ul{color:brown;}
+article.medium>h1{color:brown;}
+.low{font-family:Arial Unicode MS; font-size:24pt; text-decoration:underline; background-color:gray;}
+article.low>ul{color:black;}
+article.low>h1{color:black;}
+.done{font-family:Arial Unicode MS; font-size:24pt; text-decoration:underline; background-color:black;}
+article.done>ul{color:cyan; text-decoration:underline;}
+article.done>h1{color:cyan; text-decoration:underline;}
