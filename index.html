@@ -1,53 +1,78 @@
 <html>
   <head>
     <style>
-      h1{color: blue;
+      @keyframes example{
+        from{background-color: #4C4C4C;}
+        to{background-color: gray;}}
+      h1{color: #00CCFF;
          border: 10px solid black;
          font-size: 32pt;
          text-align: center;
-         background-color:gray;
-        font-family: Forte;}
+         font-family: Book Antiqua;
+         margin-top: 65px;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;}
+      
       nav{position: fixed;
         top: 0px;
         left: 0px;
         background-color: white;
         width:100%;
         height:30px;
-        text-align: center;}
+        text-align: center;
+        font-size: 16pt;
+      overflow: auto;}
+      
       nav a:hover{background-color: lightblue;
         font-size: 105%;}
       h3{color: blue;
-         font-size: 28pt;
+         font-size: 24pt;
          text-align: center;
          background-color:thistle;
         font-family: Comic Sans MS;}
       body{background-color: silver;}
+      #a1{float left;
+      width: 50%;
+      background-color:red;}
+      
+      #a2{float left;
+      width: 50%;
+      background-color:yellow;}
+      
     </style>
   <title>Jake Jorgenson</title>
   </head>
   <body>
     <nav>
-      <a href = "http://jorgja02.github.io/hobbies">Some Hobbies of Mine</a>
-      <a href = "http://jorgja02.github.io/gallery">A Small Art Gallery</a>
+      <a href = "http://jorgja02.github.io"><img width=25px height=25px src="http://icons.iconarchive.com/icons/icons8/android/512/Very-Basic-Home-icon.png"></a>
+      <a href = "http://jorgja02.github.io/hobbies">Hobbies Page</a>
+      <a href = "http://jorgja02.github.io/gallery">Art Gallery</a>
     </nav>
     <section>
-      <header><h1>Hello, world! This is Jake Jorgenson, welcome to my web page!</h1></header>
-      <h3>Information about me, Jake Jorgenson</h3>
-      <ul>
-        <li>birthday: Oct. 31</li>
-        <li>hometown: Stillwater, Minnesota</li>
-        <li>senior computer science & music double major at Luther College</li>
-        <li>may get a pic of myself up here eventually</li>
-      </ul>
-    </section>
-    <article>
+      
+      <h1>Hello, world! This is Jake Jorgenson, welcome to my web page!</h1>
+      <article id="a1">
+        <h3>Information about me, Jake Jorgenson</h3>
+        <ul>
+          <li>birthday: Oct. 31</li>
+          <li>hometown: Stillwater, Minnesota</li>
+          <li>senior computer science & music double major at Luther College</li>
+          <li>may get a pic of myself up here eventually</li>
+        </ul>
+      </article>
+      
+      <article id="a2">
       <h3>Assignments</h3>
       <ol type=I>
         <li><a href = "http://jorgja02.github.io/todo">CS130 Assignment #1: To Do List</a></li>
         <li><a href = "http://jorgja02.github.io/todo2">CS130 Assignment #1: To Do List Mark II</a></li>
         <li>thing 3</li>
       </ol>
-    </article>
-    <p>This line was written at 4:27pmpm central time on Sun. Sept. 27, 2015</p>
+      </article>
+    </section>
+    
+    <p>This line was written at 6:16pm central time on Sun. Sept. 27, 2015</p>
   </body>
 </html>
