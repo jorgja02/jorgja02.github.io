@@ -1,21 +1,21 @@
  <html>
    <style>
-     input{width:50px;
-        height:50px;
+     input{width:200px;
+        height:100px;
         background-color:#FFFFCC;}
-     button{width:50px;
-     	height:50px;}
+     button{width:100px;
+     	height:100px;}
      #add{background-color:red;}
      #sub{background-color:#0099FF;}
-     #mul{background-color:green;}
+     #mul{background-color:lime;}
      #div{background-color:#FF00FF;}
    </style>
    <head>
-     <title>Colors</title>
+     <title>Simple Calculator</title>
    </head>
    <body>
-     <h6>Insert 2 numbers, then click a button to<br> find 
-       their sum, difference, product or quotient!</h6>
+     <h1>Insert 2 numbers, then click a button to<br> find 
+       their sum, difference, product or quotient!</h1>
      <input type="text" id="num1" value="1" />
      <input type="text" id="num2"  value="1" /><br>
      <br>
@@ -24,7 +24,7 @@
      <button id="mul" onclick="mulem();">*</button>
      <button id="div" onclick="divem();">/</button>
      <br>
-     <h6 id="result">(Result)</h6>
+     <h2 id="result">(Result)</h2>
      
      <script>
        addem = function() {
@@ -74,4 +74,3 @@
      </script>
    </body>
  </html>
-..............................................................................................
