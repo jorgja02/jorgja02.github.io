@@ -1,9 +1,14 @@
  <html>
    <style>
      input{width:50px;
-        height:50px;}
+        height:50px;
+        background-color:#FFFFCC;}
      button{width:50px;
      	height:50px;}
+     #add{background-color:red;}
+     #sub{background-color:#0099FF;}
+     #mul{background-color:green;}
+     #div{background-color:#FF00FF;}
    </style>
    <head>
      <title>Colors</title>
@@ -14,10 +19,10 @@
      <input type="text" id="num1" value="1" />
      <input type="text" id="num2"  value="1" /><br>
      <br>
-     <button onclick="addem();">+</button>
-     <button onclick="subem();">-</button>
-     <button onclick="mulem();">*</button>
-     <button onclick="divem();">/</button>
+     <button id="add" onclick="addem();">+</button>
+     <button id="sub" onclick="subem();">-</button>
+     <button id="mul" onclick="mulem();">*</button>
+     <button id="div" onclick="divem();">/</button>
      <br>
      <h6 id="result">(Result)</h6>
      
