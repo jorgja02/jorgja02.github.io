@@ -1,0 +1,72 @@
+ <html>
+   <style>
+     input{width:50px;
+        height:50px;}
+     button{width:50px;
+     	height:50px;}
+   </style>
+   <head>
+     <title>Colors</title>
+   </head>
+   <body>
+     <h6>Insert 2 numbers, then click a button to<br> find 
+       their sum, difference, product or quotient!</h6>
+     <input type="text" id="num1" value="1" />
+     <input type="text" id="num2"  value="1" /><br>
+     <br>
+     <button onclick="addem();">+</button>
+     <button onclick="subem();">-</button>
+     <button onclick="mulem();">*</button>
+     <button onclick="divem();">/</button>
+     <br>
+     <h6 id="result">(Result)</h6>
+     
+     <script>
+       addem = function() {
+         var int1;
+         var int2;
+         var ansX;
+         var sum;
+         int1 = document.querySelector('#num1').value;
+         int2 = document.querySelector('#num2').value;
+         ansX = document.querySelector('#result');
+         sum = +int1 + +int2;
+         ansX.innerHTML = sum;
+       }
+       subem = function() {
+         var int1;
+         var int2;
+         var ansX;
+         var dif;
+         int1 = document.querySelector('#num1').value;
+         int2 = document.querySelector('#num2').value;
+         ansX = document.querySelector('#result');
+         dif = +int1 - +int2;
+         ansX.innerHTML = dif;
+       }
+       mulem = function() {
+         var int1;
+         var int2;
+         var ansX;
+         var mul;
+         int1 = document.querySelector('#num1').value;
+         int2 = document.querySelector('#num2').value;
+         ansX = document.querySelector('#result');
+         mul = +int1 * +int2;
+         ansX.innerHTML = mul;
+       }
+       divem = function() {
+         var int1;
+         var int2;
+         var ansX;
+         var div;
+         int1 = document.querySelector('#num1').value;
+         int2 = document.querySelector('#num2').value;
+         ansX = document.querySelector('#result');
+         div = +int1 / +int2;
+         ansX.innerHTML = div;
+       }
+     </script>
+   </body>
+ </html>
+..............................................................................................
