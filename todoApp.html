@@ -41,13 +41,12 @@
     
     
   </style>
-<head>
-  <link rel=stylesheet href=todoApp.js type=text/javascript />
-  <title>To Do App</title>
-</head>
+
+<head><title>To Do App</title></head>\
+
   <body>
     <nav>
-      <h1>BUSY, BUSY!! (To Do Application in progress)</h1>
+      <h1>BUSY, BUSY!! (To Do App in progress)</h1>
     </nav>
     
     <article id="todoPage">
@@ -65,8 +64,9 @@
       
       <button onclick="addToDo();">Add To Do</button>
       
+      
       <script>
-          addToDo = function() {
+        addToDo = function() {
               var todoEntry = document.querySelector("#todoInput");
 			  var todoList = document.querySelector("#todoPage");
               var ul = document.createElement("ul");
@@ -90,7 +90,7 @@
 
           }
 
-          doneTask = function() {
+        doneTask = function() {
             if (this.checked) {
               this.parentNode.classList.add("done")
             }
@@ -99,11 +99,9 @@
             }
           }
 
-		  window.onload = function() { restorelist("ul", doneTask)}
+	window.onload = function() { restorelist("ul", doneTask)}
       </script>
-      
     </footer>
     
   </body>
 </html>
-
