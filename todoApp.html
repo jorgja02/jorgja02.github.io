@@ -1,1 +1,74 @@
+<html>                                                                                                                                               
+  <style>
+    nav{
+      text-align:center;
+      background-color:blue;
+      color:white;}
+    
+    article{
+      width:100%;
+      height:200px;
+      background-color:#CCCCCC;
+      overflow: auto;}
+    
+    footer{
+      position:absolute;
+      width:100%;
+      height:50px;
+      background-color:#99FF99}
+    
+    input{
+      position:absolute;
+      
+      width:40%;}
+    
+    select{
+      position:absolute;
+      top:0px;
+      left:40%;
+      width:25%;}
+    
+    button{
+      position:absolute;
+      top:0px;
+      left:65%;
+      width:25%;}
+
+    .High{color:red;}
+    .Medium{color:orange;}
+    .Low{color:yellow;}
+    
+    
+    
+  </style>
+<head>
+  <link rel=stylesheet href=todoApp.js type=text/javascript />
+  <title>To Do App</title>
+</head>
+  <body>
+    <nav>
+      <h1>BUSY, BUSY!! (To Do Application in progress)</h1>
+    </nav>
+    
+    <article id="todoPage">
+      
+    </article>
+    
+    <footer>
+      <input type="text" id="todoInput" value="Enter ToDo entry here" /> <br>
+      
+      <select id="priority">
+        <option>High</option>  
+        <option>Medium</option>  
+        <option>Low</option>  
+      </select>
+      
+      <button onclick="addToDo();">Add To Do</button>
+      
+      
+      
+    </footer>
+    
+  </body>
+</html>
 
