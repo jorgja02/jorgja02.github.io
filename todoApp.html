@@ -92,7 +92,7 @@
 
               
               
-              localSave("http://jorgja02.github.io/todoApp");
+              localSave("ul");
               
           }
 
@@ -101,18 +101,21 @@
               this.parentNode.classList.add("done");
             }
             else{
-              this.parentNode.cssList.remove("done");
+              this.parentNode.classList.remove("done");
             }
             
             
             
-            localSave("http://jorgja02.github.io/todoApp");
+            localSave("ul");
             
           }
 
-          window.onload = function() { restoreList("http://jorgja02.github.io/todoApp", doneTask)}
+          
       </script>
     </footer>
     
   </body>
+  <script type="text/javascript" src="http://bnmnetp.github.io/CS130/listsaver.js">
+    window.onload = function() { restoreList("ul", doneTask)}
+  </script>
 </html>
