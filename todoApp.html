@@ -41,7 +41,9 @@
   </style>
   
   <script type="text/javascript" src="http://bnmnet.github.io/CS130/listsaver.js">
-  
+  localSave("http://jorgja02.github.io/todoApp")
+
+  restoreList("http://jorgja02.github.io/todoApp", doneTask)
   </script>
   
   <body>
@@ -68,28 +70,30 @@
       <script>
           addToDo = function() {
               var todoEntry = document.querySelector("#todoInput");
-			  var todoList = document.querySelector("#todoPage");
+              var todoList = document.querySelector("#todoPage");
               var ul = document.createElement("ul");
               var li = document.createElement("li");
-			  var c = document.createElement("input");
-			  
-			  
-			  c.type = 'checkbox';
-			  c.onclick = doneTask;
+              var c = document.createElement("input");
+              
+              
+              c.type = 'checkbox';
+              c.onclick = doneTask;
 
               var entry = document.createTextNode(todoEntry.value);
               
-			  li.className = priority.value;
-			  li.appendChild(c);
+              li.className = priority.value;
+              li.appendChild(c);
               li.appendChild(entry);
               
               ul.appendChild(li);
               todoList.appendChild(ul);
 
-			  
-			  
-			  localSave("http://jorgja02.github.io/todoApp");
-			  
+              ul.type.listStyle = 'none';
+
+              
+              
+              localSave("http://jorgja02.github.io/todoApp");
+              
           }
 
           doneTask = function() {
@@ -99,14 +103,14 @@
             else{
               this.parentNode.cssList.remove("done");
             }
-			
-			
-			
-			localSave("http://jorgja02.github.io/todoApp");
-			
+            
+            
+            
+            localSave("http://jorgja02.github.io/todoApp");
+            
           }
 
-		  window.onload = function() { restoreList("http://jorgja02.github.io/todoApp", doneTask)}
+          window.onload = function() { restoreList("http://jorgja02.github.io/todoApp", doneTask)}
       </script>
     </footer>
     
