@@ -7,9 +7,8 @@
     
     article{
       width:100%;
-      height:200px;
-      background-color:#CCCCCC;
-      overflow: auto;}
+      height:500px;
+      background-color:#CCCCCC;}
     
     footer{
       position:absolute;
@@ -37,16 +36,17 @@
     .High{color:red;}
     .Medium{color:orange;}
     .Low{color:yellow;}
-    
-    
+    .done{text-decoration: line-through;}
     
   </style>
-
-<head><title>To Do App</title></head>\
-
+  
+  <script type="text/javascript" src="http://bnmnet.github.io/CS130/listsaver.js">
+  
+  </script>
+  
   <body>
     <nav>
-      <h1>BUSY, BUSY!! (To Do App in progress)</h1>
+      <h1>BUSY, BUSY!!</h1>
     </nav>
     
     <article id="todoPage">
@@ -66,40 +66,47 @@
       
       
       <script>
-        addToDo = function() {
+          addToDo = function() {
               var todoEntry = document.querySelector("#todoInput");
 			  var todoList = document.querySelector("#todoPage");
               var ul = document.createElement("ul");
               var li = document.createElement("li");
-			  
 			  var c = document.createElement("input");
+			  
+			  
 			  c.type = 'checkbox';
 			  c.onclick = doneTask;
 
               var entry = document.createTextNode(todoEntry.value);
-              <!-- Needs a checkbox node, not text -->
               
 			  li.className = priority.value;
 			  li.appendChild(c);
               li.appendChild(entry);
               
-			  
-
               ul.appendChild(li);
               todoList.appendChild(ul);
 
+			  
+			  
+			  localSave("http://jorgja02.github.io/todoApp");
+			  
           }
 
-        doneTask = function() {
+          doneTask = function() {
             if (this.checked) {
-              this.parentNode.classList.add("done")
+              this.parentNode.classList.add("done");
             }
             else{
-              this.parentNode.cssList.remove("done")
+              this.parentNode.cssList.remove("done");
             }
+			
+			
+			
+			localSave("http://jorgja02.github.io/todoApp");
+			
           }
 
-	window.onload = function() { restorelist("ul", doneTask)}
+		  window.onload = function() { restoreList("http://jorgja02.github.io/todoApp", doneTask)}
       </script>
     </footer>
     
